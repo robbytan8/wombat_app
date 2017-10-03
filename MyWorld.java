@@ -6,16 +6,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Robby Tan
  * @version 1.0
  */
-public class MyWorld extends World
-{
-
+public class MyWorld extends World {
+    private GreenfootSound bgSound;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
     public MyWorld() {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(600, 400, 1);
+        bgSound = new GreenfootSound("Cobalt.mp3");
+        bgSound.playLoop();
         prepare();
     }
 
