@@ -36,5 +36,8 @@ public class Wombat extends Actor
         } else if (Greenfoot.isKeyDown("space")) {
             move(10);
         }
+        if (Greenfoot.mouseClicked(this)) {
+            move(5);
+        }
     }
 }
